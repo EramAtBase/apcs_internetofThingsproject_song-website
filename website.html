@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+     background: linear-gradient(to right, black , red, white);
+}
+#header
+{
+    color:white;
+    font-family:"Courier New", Courier, monospace;
+    
+}
+#EramDes
+{
+    display:none;
+    color:white;
+}
+#MariamDes
+{
+    display:none;
+    color:white;
+}
+#EramSchoolDes
+{
+    display:none;
+    color:white;
+}
+#MariamSchoolDes
+{
+   display:none;
+   color:white;
+}
+#button
+{
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: white;
+     
+}
+#button.hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+</style>
+</head>
+<body>
+    <div id= "header">
+    <center> <h1><u>Eram And Mariam's Project</u></h1> </center>
+    </div>
+  <center> <input type ="button" value="Try It"  onclick=one() id="button" />
+    <div id="EramDes">
+        <p> E- mpathizing</p>
+        <p>R-ealistic</p>
+        <p>A-sian</p>
+        <p>M-eticulous</p>
+    </div>
+    <div id = "MariamDes">
+        <p>M-eticulous</p>
+        <p>A-frican</p>
+        <p>R-elaxed</p>
+        <p>I-nspiring</p>
+        <p>A-dvocate</p>
+        <p>M-eagerly</p>
+    </div>
+    <div id ="EramSchoolDes">
+        <p>M-eagerly</p>
+        <p>I-nspiring</p>
+        <p>D-ifferent</p>
+        <p>D-aring</p>
+        <p>L-ovable</p>
+        <p>E-nergetic</p>
+    </div>
+    <div id ="MariamSchoolDes">
+        <p>S-haky</p>
+        <p>C-reative</p>
+        <p>H-oly</p>
+        <p>O-mmisible</p>
+        <p>O-utspoken</p>
+        <p>L-aughable</p>
+    </div>
+    </center>
+   <script>
+     function one()
+    { document.getElementById('EramDes').style.display = 'block';
+     console.log("here");
+     
+     setTimeout(function(){
+ document.getElementById('EramDes').style.display= 'none'; document.getElementById('MariamDes').style.display = 'block';
+     }, 3000);
+     
+     
+     setTimeout(function(){ document.getElementById('EramDes').style.display= 'block';    document.getElementById('MariamDes').style.display = 'none';
+document.getElementById('EramSchoolDes').style.display = 'block';}, 7000);
+    
+     
+      setTimeout(function(){ document.getElementById('EramDes').style.display= 'none';    document.getElementById('MariamDes').style.display = 'block';
+document.getElementById('EramSchoolDes').style.display = 'none';                     document.getElementById('MariamSchoolDes').style.display = 'block';}, 10000);
+    
+     
+     setTimeout(function(){document.getElementById('EramDes').style.display= 'block';    document.getElementById('MariamDes').style.display = 'block';
+document.getElementById('EramSchoolDes').style.display = 'block';                     document.getElementById('MariamSchoolDes').style.display = 'block';}, 15000)
+     }
+     
+
+   </script>
+   
+  
+    
+    
+</body>
+</html>
